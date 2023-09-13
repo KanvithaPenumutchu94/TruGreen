@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-13T22:33:52 IST" name="Suite" finished-at="2023-09-13T22:35:23 IST" duration-ms="91611">
+    <groups>
+    </groups>
+    <test started-at="2023-09-13T22:33:52 IST" name="Test" finished-at="2023-09-13T22:35:23 IST" duration-ms="91611">
+      <class name="com.framework.testCases.HomePageTestSM">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.framework.testCases.HomePageTestSM@5386659f]" started-at="2023-09-13T22:34:48 IST" name="beforeMethod" finished-at="2023-09-13T22:34:51 IST" duration-ms="3057" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="homepageTest()[pri:0, instance:com.framework.testCases.HomePageTestSM@5386659f]" started-at="2023-09-13T22:34:51 IST" name="homepageTest" finished-at="2023-09-13T22:35:23 IST" duration-ms="32307" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.lang.CharSequence.toString()" because "s" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "s" is null
+at java.base/java.lang.String.contains(String.java:2854)
+at com.framework.pages.HomePageSM.approveRFP(HomePageSM.java:49)
+at com.framework.testCases.HomePageTestSM.homepageTest(HomePageTestSM.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepageTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.framework.testCases.HomePageTestSM@5386659f]" started-at="2023-09-13T22:35:23 IST" name="afterMethod" finished-at="2023-09-13T22:35:23 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.framework.testCases.HomePageTestSM -->
+      <class name="com.framework.testCases.HomePageTestSE">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.framework.testCases.HomePageTestSE@7161d8d1]" started-at="2023-09-13T22:33:52 IST" name="beforeMethod" finished-at="2023-09-13T22:33:57 IST" duration-ms="4702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="homepageTest()[pri:0, instance:com.framework.testCases.HomePageTestSE@7161d8d1]" started-at="2023-09-13T22:33:57 IST" name="homepageTest" finished-at="2023-09-13T22:34:47 IST" duration-ms="50225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepageTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.framework.testCases.HomePageTestSE@7161d8d1]" started-at="2023-09-13T22:34:48 IST" name="afterMethod" finished-at="2023-09-13T22:34:48 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.framework.testCases.HomePageTestSE -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
