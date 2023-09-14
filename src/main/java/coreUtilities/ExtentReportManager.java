@@ -15,8 +15,6 @@ import com.aventstack.extentreports.model.Media;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-
-
 public class ExtentReportManager {
 	
 	public static ExtentReports extent = new ExtentReports();

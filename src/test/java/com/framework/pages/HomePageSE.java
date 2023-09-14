@@ -16,7 +16,7 @@ import coreUtilities.ExtentReportManager;
 
 public class HomePageSE extends BaseClass {
 	
-	String refNo;
+	static String refNo;
 	public HomePageSE() {
 		PageFactory.initElements(driver, this);
 	}
@@ -71,9 +71,9 @@ public class HomePageSE extends BaseClass {
 	public void enterCredentials() throws IOException, InterruptedException {
 		Thread.sleep(2000);
 		usernameTxt.sendKeys(ConfiguratorReader.getConfigValue("usernamese"));
-		ExtentReportManager.logInfo("entered the usernamesm");
+		ExtentReportManager.logInfo("entered the se username");
 		passwordTxt.sendKeys(ConfiguratorReader.getConfigValue("passwordse"));
-		ExtentReportManager.logInfo("entered the passwordsm");
+		ExtentReportManager.logInfo("entered the se password");
 	}
 	
 	public void clickOnSubmitButton() throws InterruptedException {
@@ -100,7 +100,7 @@ public class HomePageSE extends BaseClass {
 	
 	public void clickOnRFP() {
 		RFPLnk.click();
-		ExtentReportManager.logInfo("clicked on procurement link");
+		ExtentReportManager.logInfo("clicked on RFP link");
 	}
 	
 	public void clickOnClientDD() {
@@ -130,6 +130,7 @@ public class HomePageSE extends BaseClass {
 			//System.out.println(attributevalue);
 			if(attributevalue.equals("Alpha Three")) {
 				siteDrpdwn.sendKeys(Keys.ENTER);
+				Thread.sleep(3000);
 				ExtentReportManager.logInfo("selected alpha three from site dropdown");
 			}
 		}
@@ -188,7 +189,6 @@ public class HomePageSE extends BaseClass {
 	}
 	
 	public void clickOnLogout() {
-		
 		logoutBtn.click();
 		ExtentReportManager.logInfo("clicked on logout");
 	}

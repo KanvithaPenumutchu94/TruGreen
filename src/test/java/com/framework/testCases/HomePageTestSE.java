@@ -14,7 +14,7 @@ public class HomePageTestSE extends BaseClass {
 	HomePageSE homepage;
 	
 	@Test
-	public void homepageTest() throws IOException, InterruptedException {
+	public void homepageTestSE() throws IOException, InterruptedException {
 		homepage=new HomePageSE();
 		homepage.enterCredentials();
 		homepage.clickOnSubmitButton();

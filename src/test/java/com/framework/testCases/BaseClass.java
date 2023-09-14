@@ -55,6 +55,8 @@ public class BaseClass {
 			  options.addArguments("--use-fake-ui-for-media-stream");
 			  //WebDriverManager.chromedriver().setup(); 
 			  driver=new ChromeDriver(options);
+			  driver.manage().deleteAllCookies();
+			  driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
 			
 		}
 		else if(browsername.equalsIgnoreCase("edge"))

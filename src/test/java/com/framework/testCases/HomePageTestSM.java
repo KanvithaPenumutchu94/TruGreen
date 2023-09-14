@@ -15,18 +15,31 @@ public class HomePageTestSM extends BaseClass {
 	HomePageSM homepagesm;
 	
 	@Test
-	public void homepageTest() throws IOException, InterruptedException {
+	public void homepageTestSM() throws IOException, InterruptedException {
 		homepagese=new HomePageSE();
 		homepagesm=new HomePageSM();
 		
 		homepagesm.enterCredentialsSM();
+		
 		homepagese.clickOnSubmitButton();
 		homepagese.clickOnProcurement();
 		homepagese.clickOnRFP();
 		homepagese.clickOnClientDD();
 		homepagese.clickOnSiteDD();
-		Thread.sleep(3000);
-		homepagesm.approveRFP();
+		Thread.sleep(5000);
+		
+		homepagesm.clickOnSelectActionDD();
+		homepagesm.clickOnApproveOption();
+		homepagesm.clickOnAssignToDD();
+		homepagesm.clickOnSiteHead();
+		homepagesm.clickOnApproveBtnInPopUp();
+		homepagesm.approveSuccessMsgDisplayed();
+		
+		homepagese.clickOnLogout();
+		
+		
+	
+		
 		
 		//homepagese.clickOnLogout();
 	}

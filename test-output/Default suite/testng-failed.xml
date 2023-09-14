@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.framework.testCases.HomePageTestSM">
+      <class name="com.framework.testCases.HomePageTestSH">
         <methods>
           <include name="homepageTest"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.framework.testCases.HomePageTestSM -->
+      </class> <!-- com.framework.testCases.HomePageTestSH -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
